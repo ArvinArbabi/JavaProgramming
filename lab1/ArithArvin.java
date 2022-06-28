@@ -1,37 +1,38 @@
-public class ArithArvin
-{
-   public static void main(String[] args)
-   {
-    // printing my name and ID
-    System.out.println("My family name is: Arbabi");
-    System.out.println("My student ID is G01296217");
-    
-    // storing values into float values
-    float float_myId = 28; 
-    float float_nLet = 6;
-    
-    // converting the floats to Ints
-    int myId = Math.round(float_myId);
-    int nLet = Math.round(float_nLet);
-    
-    // storing the expressions into their respective variables
-    int Expression1 = (myId + nLet);
-    int Expression2 = (myId - nLet );
-    float Expression3 = (float_myId / 2); 
-    int Expression4 = (myId % 2);
-    int Expression5 = (nLet + nLet * 2);
-    float Expression6 = (float_myId / (float_nLet + 1000));
+/*
+ * Arvin Arbabi
+ * Project 1
+ * 06/27/2022
+ * this code takes the amount of letters in my last name and the 
+ * added amount of my school ID and undergoes several arithmatic
+ * opperations
+ */
+public class ArithArvin {
+   public static void main(String[] args) {
+      int myId = 28;
+      int nLet = "Arbabi".toCharArray().length;
+      // printing my name and ID
+      System.out.println("My family name is: Arbabi");
+      System.out.println("My student ID is G01296217");
+      System.out.println("myId is: " + myId);
+      System.out.println("nLet is: " + nLet);
 
-    //printing out expressions
-    System.out.println("1: " + Expression1);
-    System.out.println("2: " + Expression2);
-    System.out.printf("3: " + "%.1f", Expression3);
-    System.out.println("");
-    System.out.println("4: " + Expression4);
-    System.out.println("5: " + Expression5);
-    System.out.printf("6: " + "%.5f", Expression6);
+      // storing the expressions into their variables and printing them
+      int Expression1 = (myId + nLet);
+      System.out.println("exp1: " + Expression1);
 
- 
+      int Expression2 = (myId - nLet);
+      System.out.println("exp2: " + Expression2);
 
+      float Expression3 = (float)myId / 2.0f;
+      System.out.printf("exp3: " + "%.1f\n", Expression3);
+      
+      int Expression4 = (myId % 2);
+      System.out.println("exp4: " + Expression4);
+      
+      int Expression5 = (nLet + nLet * 2);
+      System.out.println("exp5: " + Expression5);
+
+      float Expression6 = ((float)myId / ((float)nLet + 1000));
+      System.out.printf("exp6: " + "%.5f", Expression6);
    }
 }
